@@ -1,0 +1,57 @@
+
+.contact{
+    padding: 4rem 0;
+
+}
+
+.contact .info li a{
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0.75rem 0;
+    color: black;
+}
+
+
+.contact .info .form-group{
+    margin-top: 1.5rem;
+}
+
+.contact .form-control{
+    height: 3.75rem;
+    padding: 0.375rem 1.1875rem ;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 0.1875rem 1.25rem 0 rbg(0 0 0 / 12%);
+}
+
+
+.contact .textarea{
+    width: 100%;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1.1875rem;
+    border: none;
+    margin-top: 0.3125rem;
+    box-shadow: 0 0.1875rem 1.25rem 0 rbg(0 0 0 / 12%);
+
+}
+
+.contact .textarea{
+    outline: none;
+    border: none;
+}
+
+
+
+
+.contact{
+    min-height: 100vh;
+    background: 
+    linear-gradient(rgb(77, 80, 80),transparent)
+    
+    
+    
+    ,url(../../assets/images/background.img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

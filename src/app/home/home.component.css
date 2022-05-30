@@ -1,0 +1,348 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --text:1rem;
+    --head: calc(1rem + 5vw )
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.hero-section{
+    min-height: 100vh;
+    background: 
+    linear-gradient(rgb(78, 81, 81),transparent)
+    
+    
+    
+    ,url(../../assets/images/background.img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
+}
+
+nav img{
+    width: 99px;
+    
+    
+}
+
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+
+.nav-links ul li a{
+    color: rgba(255, 251, 251, 0.76);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.nav-links ul li ::after{
+    content:'' ;
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+
+.nav-links ul li :hover::after{
+    width: 100%;
+}
+
+
+
+.hero-text{
+    color: black;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: slide 1s ease-in-out;
+}
+
+.hero-text a {
+    text-decoration: none;
+
+}
+
+
+@keyframes slide {
+    from {
+        transform: translateX(-100);
+    }
+    to {
+        transform: translateX(-0);
+    }
+}
+
+
+.hero-text a{
+    color: black;
+    background:#fab1a0;
+    font-weight: 900;
+    font-size: var(--text);
+    padding: 0.8rem 1rem;
+    transition: opacity 250ms linear;
+
+}
+    
+
+.hero-text h2{
+    font-size: var(--head);
+}
+
+
+.hero-text a:hover{
+    opacity: 0.8;
+
+}
+
+hr{
+    background-color: rgba(47, 99, 151, 0.815);
+}
+
+
+
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.cards>.div1{
+    border: 1px solid black;
+    height: 300px;
+    width: 200px;
+    padding-left: 50px;
+    margin-left: 20px;
+    box-shadow: 5px 5px black;
+    
+}
+
+.cards{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.cards .box{
+    padding: 3px;
+    margin: 3px;
+    width: 25%;
+    background-color: aliceblue;
+}
+
+.box img{
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
+.cards .parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards h3{
+    margin: 0;
+    padding: 0;
+}
+
+.cards .btn a{
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 5px;
+    color: black;}
+    
+
+.cards .btn a:hover {
+font-size: 19px;
+background-color: #ec937f;
+}
+
+
+.cards>.div2{
+    border: 1px solid black;
+        height: 300px;
+    width: 200px;
+    box-shadow: 5px 5px black;
+    padding-left: 50px;
+}
+
+
+
+.cards>.div3{
+    border: 1px solid black;
+    box-shadow: 5px 5px black;
+   padding-left: 50px;
+   margin-right: 20px;
+    height: 300px;
+    width: 200px;
+
+}
+  
+
+.social-links{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    /* border: 1px solid black; */
+}
+
+.social-links i{
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/* cards */
+
+.btn{
+    text-decoration:none ;
+}
+
+
+
+.footer{
+    background-color: black;
+    width: 100%;
+    height: 180px;
+    color: rgb(152, 186, 206);
+    display: flex;
+    list-style: none;
+}
+
+.footer .div1{
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 30%;
+}
+
+.footer .div2{
+    height: 100%;
+    width: 30%;
+}
+
+.footer .div2 ul{
+    /* border: 1px solid black; */
+    flex-grow: 5;
+    list-style: none;
+}
+
+.footer .div3{
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 30%;
+}
+
+.card > img {
+    width: 18rem;
+    height: 20rem;
+}
+
+.col{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+/* footer */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+div,
+footer {
+  box-sizing: border-box;
+}
+
+div.mister_separator {
+  margin-top: 100px;
+}
+
+
+footer.site-footer {
+  padding: 60px 30px;
+  background: #0d0d0db7;
+  color: #999999;
+  font-size: 10pt;
+}
+
+div#footer-container {
+  width: 768px;
+  margin: 0 auto;
+  transition: all 0.2s ease;
+}
+
+div#footer-grid {
+  display: flex;
+  align-items: stretch;
+  padding-bottom: 60px;
+}
+
+
+
+
+
